@@ -1,13 +1,13 @@
 # Advanced explanation
-At first we've got a function
+At first, we've got a function
 ```javascript
 function riddleSolver(board)
 ```
 that takes one parameter called <strong>board</strong> which takes <strong>array</strong> input.
 
-At the beggining function creates an empty array variable <strong>matching</strong> that will store "coordinates" of variables that will be replaced by value 0.
+In the beginning, the function creates an empty array variable <strong>matching</strong> that will store "coordinates" of variables that will be replaced by value 0.
 
-Then it makes a copy of <strong>board</strong>.
+Then it makes a copy of the <strong>board</strong>.
 ```javascript
 let startBoard = JSON.parse(JSON.stringify(board));
 ```
@@ -23,9 +23,9 @@ do {
   } while (!isEqual(startBoard, board));
 ```
 
-which at the beginning sets <strong>startBoard</strong> variable to be the clone of current <strong>board</strong> array.
+which at the beginning sets <strong>startBoard</strong> variable to be the clone of the current <strong>board</strong> array.
 Then starts functions: <strong>serching</strong> and <strong>setToBottom</strong>.
-The do...while loop will be repeating untill <strong>startBoard</strong> variable will be the same as <strong>board</strong>.  
+The do...while loop will be repeating until <strong>startBoard</strong> variable will be the same as <strong>board</strong>.  
 <strong>isEqual</strong> function makes sure of that.  
 This is how the <strong>riddleSolver</strong> knows how many times do all the things to return finished array.
 
@@ -33,8 +33,8 @@ This is how the <strong>riddleSolver</strong> knows how many times do all the th
 
 This function is used by another function called <strong>searching</strong>.  
 <strong>isItemInArray</strong> takes two parameters: <strong>array</strong> and <strong>item</strong>.
-First one is always relating to <strong>matching</strong> variable.
-Second one is taking "coordinates" of value that will be replaced by value 0.
+The first one is always relating to <strong>matching</strong> variable.
+The second one is taking "coordinates" of value that will be replaced by value 0.
 
 ```javascript
 function isItemInArray(array, item) {
@@ -51,7 +51,7 @@ If it finds matching value it returns <strong>true</strong>.
 If not it returns <strong>false</strong>.
 
 ### searching
-This function is splited into three for loops.
+This function is split into three for loops.
 
 The first loop is looking for matching values horizontally:
 ```javascript

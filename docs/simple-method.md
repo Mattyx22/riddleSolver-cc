@@ -10,7 +10,7 @@ riddleSolver will find numbers that are repeating at least 3 times vertically or
   <img src="./img/2.jpg">
 </p>
 
-And then change it to zero (we read it as empty):  
+And then changes it to zero (we read it as empty):  
 <p align="center">
   <img src="./img/3.jpg">
 </p>
