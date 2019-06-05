@@ -1,3 +1,4 @@
+<!-- docs/_sidebar.md -->
 - Guide
   - [Getting Started](/getting-started)
 - How does it work?
